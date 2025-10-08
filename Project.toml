@@ -1,0 +1,23 @@
+name = "CirculatorySystemModels"
+uuid = "4211d73e-f4e8-40c4-b600-92e4b82f0e1a"
+authors = ["Torsten Schenkel <t.schenkel@shu.ac.uk>, Harry Saxton <harry.saxton@student.shu.ac.uk> and contributors"]
+version = "0.4.1"
+
+[deps]
+CSV = "336ed68f-0bac-5ca0-87d4-7b16caf5d00b"
+DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
+ModelingToolkit = "961ee093-0014-501f-94e3-6117800e7a78"
+
+[compat]
+CSV = "0.10"
+DataFrames = "1"
+
+ModelingToolkit = "9"
+julia = "1.10"
+
+[extras]
+OrdinaryDiffEq = "1dea7af3-3e70-54e6-95c3-0bf5283fa5ed"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["OrdinaryDiffEq", "Test"]
